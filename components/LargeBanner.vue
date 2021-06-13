@@ -1,10 +1,14 @@
 <template>
   <div class="large-banner">
-    <img src="https://via.placeholder.com/1500" alt="placeholder image" />
+    <img src="~/assets/images/podcast.jpg" alt="placeholder image" />
     <div class="large-banner-text">
-      <span>SHERCO, REIJU, ELECTRIC MOTION, SWM, GASGAS LEGACY</span>
-      <h1>DIRTBIKE SPECIALISTS</h1>
-      <button class="large">SHOP NOW</button>
+      <span
+        >BRINGING YOU ALL THE NEWS THAT ONLY A FAKE PORTFOLIO PROJECT CAN</span
+      >
+      <h1>FAKE MOTOCROSS PODCAST</h1>
+      <NuxtLink to="/shop">
+        <button class="large">BUY MERCH</button>
+      </NuxtLink>
     </div>
   </div>
 </template>
