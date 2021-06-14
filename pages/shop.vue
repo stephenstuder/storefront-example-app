@@ -1,5 +1,10 @@
 <template>
-  <div>{{ products }}</div>
+  <div>
+    <div v-if="products" class="card">
+      <img :src="imageUrl" alt="" />
+      <h3>{{ products.data[0].title }}</h3>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -8,12 +13,18 @@ export default {
   data() {
     return {
       products: null,
+      url: null,
     }
   },
+  computed: {
+    imageUrl() {
+      return this.url + this.products.data[0].image[0].url
+    },
+  },
   created() {
-    const url = 'http://localhost:1337/products'
+    this.url = 'http://localhost:1337'
     axios
-      .get(url)
+      .get(this.url + '/products')
       .then((response) => {
         this.products = response
       })
@@ -23,3 +34,9 @@ export default {
   },
 }
 </script>
+<style scoped>
+img {
+  border-radius: 0;
+  object-fit: cover;
+}
+</style>
