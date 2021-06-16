@@ -31,10 +31,14 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/snipcart',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/axios'],
+  snipcart: {
+    key: 'NmYyMWRhMTAtZTQ1MS00ZDhhLWJkNTQtOGQyMjBmNWQyYTlkNjM3NTk0ODA1NjM5OTQ1Nzkx',
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

@@ -3,6 +3,17 @@
     <img :src="imageUrl" alt="" />
     <h5 class="product-title">{{ product.title }}</h5>
     <span class="product-price">${{ product.price }}</span>
+    <button
+      class="snipcart-add-item"
+      :data-item-id="product.title"
+      :data-item-price="product.price"
+      :data-item-description="product.description"
+      :data-item-image="imageUrl"
+      data-item-url="/shop"
+      :data-item-name="product.title"
+    >
+      Add to cart
+    </button>
   </div>
 </template>
 
@@ -35,6 +46,9 @@ img {
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
   width: 100%;
+}
+button {
+  margin-bottom: 10px;
 }
 .card {
   width: 300px;
