@@ -308,7 +308,7 @@ button.large {
 }
 
 .card {
-  padding: 2em;
+  margin: 2em;
   background: var(--cardBg);
   box-shadow: var(--level-3);
   border-radius: var(--border-radius);
