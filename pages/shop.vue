@@ -41,5 +41,6 @@ export default {
 <style scoped>
 .product-list {
   display: flex;
+  flex-wrap: wrap;
 }
 </style>
