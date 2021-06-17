@@ -1,5 +1,5 @@
 <template>
-  <div v-if="product" class="card">
+  <div v-if="product" class="card" @click="goToDetails">
     <img :src="imageUrl" alt="" />
     <h5 class="product-title">{{ product.title }}</h5>
     <span class="product-price">${{ product.price }}</span>
@@ -38,6 +38,11 @@ export default {
   created() {
     this.url = 'http://localhost:1337'
   },
+  methods: {
+    goToDetails() {
+      this.$router.push(`shop/${this.product.id}`)
+    },
+  },
 }
 </script>
 
@@ -55,6 +60,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .product-title {
   margin-top: 10px;

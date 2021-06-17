@@ -228,6 +228,7 @@ button {
 
 button:hover {
   box-shadow: var(--level-2);
+  cursor: pointer;
 }
 
 button[disabled] {
