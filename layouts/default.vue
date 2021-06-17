@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="dark oled h-100">
     <NavBar />
     <body>
-      <Nuxt class="layout" />
+      <Nuxt />
     </body>
   </div>
 </template>
@@ -18,4 +18,8 @@ export default {
 
 <style>
 @import '@/assets/css/style.css';
+@import '@/assets/css/normalize.css';
+.h-100 {
+  min-height: 100vh;
+}
 </style>

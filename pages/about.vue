@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="layout">
     <div>
       <Logo />
       <h1 class="title">storefront-concept</h1>

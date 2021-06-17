@@ -1,6 +1,6 @@
 <template>
   <div class="large-banner">
-    <img src="~/assets/images/podcast.jpg" alt="placeholder image" />
+    <img src="~/assets/images/podcast.jpg" alt="podcast studio" />
     <div class="large-banner-text">
       <span
         >BRINGING YOU ALL THE NEWS THAT ONLY A FAKE PORTFOLIO PROJECT CAN</span
@@ -16,8 +16,8 @@
 <style scoped>
 .large-banner {
   width: 100%;
-  height: 80vh;
-  border: 1px solid green;
+  height: 100%;
+  object-fit: cover;
   margin: 0;
   position: relative;
   display: grid;
@@ -27,7 +27,7 @@
   position: absolute;
 }
 .large-banner-text h1 {
-  background: white;
+  background: var(--darkGrey);
 }
 .large-banner-text span {
   background: black;

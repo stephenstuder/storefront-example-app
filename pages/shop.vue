@@ -1,5 +1,5 @@
 <template>
-  <div v-if="products">
+  <div v-if="products" class="layout">
     <h2>Shop</h2>
     <div class="product-list">
       <ProductCard
