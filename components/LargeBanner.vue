@@ -25,6 +25,7 @@
 }
 .large-banner-text {
   position: absolute;
+  margin: 10px;
 }
 .large-banner-text h1 {
   background: var(--darkGrey);
@@ -36,6 +37,7 @@
 img {
   border-radius: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  object-fit: cover;
 }
 </style>
